@@ -11,11 +11,11 @@ cdt_name:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main 
+- conda-forge main
 docker_image:
 - condaforge/linux-anvil-aarch64
 krb5:
-- '1.16'
+- 1.17.1
 libevent:
 - 2.1.10
 ncurses:
