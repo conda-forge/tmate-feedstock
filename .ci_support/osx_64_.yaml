@@ -3,21 +3,19 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '9'
+- '11'
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 krb5:
-- 1.17.1
+- '1.19'
 libevent:
 - 2.1.10
 macos_machine:
 - x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
 ncurses:
-- '6.1'
+- '6.2'
 pin_run_as_build:
   krb5:
     max_pin: x.x
@@ -25,3 +23,5 @@ pin_run_as_build:
     max_pin: x.x.x
   ncurses:
     max_pin: x.x
+target_platform:
+- osx-64

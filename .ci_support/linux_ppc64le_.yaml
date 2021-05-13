@@ -1,19 +1,21 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '8'
+- '9'
+cdt_name:
+- cos7
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 docker_image:
-- condaforge/linux-anvil-ppc64le
+- quay.io/condaforge/linux-anvil-ppc64le
 krb5:
-- 1.17.1
+- '1.19'
 libevent:
 - 2.1.10
 ncurses:
-- '6.1'
+- '6.2'
 pin_run_as_build:
   krb5:
     max_pin: x.x
@@ -21,3 +23,5 @@ pin_run_as_build:
     max_pin: x.x.x
   ncurses:
     max_pin: x.x
+target_platform:
+- linux-ppc64le
