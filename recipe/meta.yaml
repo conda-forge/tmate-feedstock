@@ -30,8 +30,6 @@ requirements:
     - krb5
 
   run:
-    # TODO: add run exports for ncurses
-    - ncurses
     # TODO: add run exports for msgpack-c
     - msgpack-c
 
@@ -51,6 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - hmaarrfk
-    # - jakirkham
-    # - dougalsutherland
     - matthiasdiener
