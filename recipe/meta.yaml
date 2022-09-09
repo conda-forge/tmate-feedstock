@@ -9,7 +9,7 @@ source:
   sha256: 62b61eb12ab394012c861f6b48ba0bc04ac8765abca13bdde5a4d9105cb16138
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 requirements:
@@ -27,7 +27,11 @@ requirements:
     - ncurses
     - msgpack-c
     - libssh
+    # conda claims that we are overlinking to krb5... not sure why
     - krb5
+    # Something is leaking an openssl symbol, not sure why
+    # https://github.com/conda-forge/tmate-feedstock/issues/10
+    - openssl
 
   run:
     # TODO: add run exports for msgpack-c
