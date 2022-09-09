@@ -9,7 +9,7 @@ source:
   sha256: 62b61eb12ab394012c861f6b48ba0bc04ac8765abca13bdde5a4d9105cb16138
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 requirements:
@@ -34,6 +34,11 @@ requirements:
     - msgpack-c
 
 test:
+  requires:
+    # test against both versions of openssl to ensure
+    # symbols are not leaked
+    - openssl 3   # [linux64]
+    - openssl 1   # [not linux64]
   commands:
     - tmate -V
     # Check that no server is running.
