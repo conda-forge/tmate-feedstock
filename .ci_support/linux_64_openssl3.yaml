@@ -3,13 +3,13 @@ c_compiler:
 c_compiler_version:
 - '10'
 cdt_name:
-- cos7
+- cos6
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
-- quay.io/condaforge/linux-anvil-ppc64le
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 krb5:
 - '1.19'
 libevent:
@@ -18,10 +18,12 @@ libssh:
 - '0.10'
 ncurses:
 - '6'
+openssl:
+- '3'
 pin_run_as_build:
   krb5:
     max_pin: x.x
   libevent:
     max_pin: x.x.x
 target_platform:
-- linux-ppc64le
+- linux-64
