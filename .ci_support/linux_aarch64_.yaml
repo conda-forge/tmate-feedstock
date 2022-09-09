@@ -18,6 +18,8 @@ krb5:
 - '1.19'
 libevent:
 - 2.1.10
+libssh:
+- '0.10'
 ncurses:
 - '6'
 pin_run_as_build:
