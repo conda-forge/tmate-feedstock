@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '13'
+- '14'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -12,6 +12,8 @@ krb5:
 - '1.19'
 libevent:
 - 2.1.10
+libssh:
+- '0.10'
 macos_machine:
 - arm64-apple-darwin20.0.0
 ncurses:
