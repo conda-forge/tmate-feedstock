@@ -9,7 +9,7 @@ source:
   sha256: 62b61eb12ab394012c861f6b48ba0bc04ac8765abca13bdde5a4d9105cb16138
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
 
 requirements:
@@ -27,13 +27,16 @@ requirements:
     - ncurses
     - msgpack-c
     - libssh
-    - krb5
 
   run:
     # TODO: add run exports for msgpack-c
     - msgpack-c
 
 test:
+  requires:
+    # add explicit tests for compatibility for openssl 3 and 1.1.1
+    - openssl 3   # [not linux64]
+    - openssl 1   # [linux64]
   commands:
     - tmate -V
     # Check that no server is running.
