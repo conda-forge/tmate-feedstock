@@ -27,13 +27,16 @@ requirements:
     - ncurses
     - msgpack-c
     - libssh
-    - krb5
 
   run:
     # TODO: add run exports for msgpack-c
     - msgpack-c
 
 test:
+  requires:
+    # add explicit tests for compatibility for openssl 3 and 1.1.1
+    - openssl 3   # [not linux64]
+    - openssl 1   # [linux64]
   commands:
     - tmate -V
     # Check that no server is running.
