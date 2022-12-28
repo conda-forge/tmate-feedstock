@@ -3,7 +3,7 @@ BUILD:
 c_compiler:
 - gcc
 c_compiler_version:
-- '10'
+- '11'
 cdt_arch:
 - aarch64
 cdt_name:
@@ -20,8 +20,5 @@ libssh:
 - '0.10'
 ncurses:
 - '6'
-pin_run_as_build:
-  libevent:
-    max_pin: x.x.x
 target_platform:
 - linux-aarch64
