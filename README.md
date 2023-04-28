@@ -1,11 +1,11 @@
-About tmate
-===========
+About tmate-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmate-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tmate.io/
 
 Package license: ISC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tmate-feedstock/blob/main/LICENSE.txt)
 
 Summary: Instant Terminal Sharing.
 
