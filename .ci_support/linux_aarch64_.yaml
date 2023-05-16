@@ -18,6 +18,8 @@ libevent:
 - 2.1.12
 libssh:
 - '0.10'
+msgpack_c:
+- '6'
 ncurses:
 - '6'
 target_platform:
