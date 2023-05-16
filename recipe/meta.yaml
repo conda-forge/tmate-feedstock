@@ -7,9 +7,12 @@ package:
 source:
   url: https://github.com/tmate-io/tmate/archive/{{ version }}.tar.gz
   sha256: 62b61eb12ab394012c861f6b48ba0bc04ac8765abca13bdde5a4d9105cb16138
+  patches:
+    # https://github.com/tmate-io/tmate/pull/281
+    - 281-fix-msgpack-c.patch
 
 build:
-  number: 7
+  number: 8
   skip: true  # [win]
 
 requirements:
@@ -27,10 +30,6 @@ requirements:
     - ncurses
     - msgpack-c
     - libssh
-
-  run:
-    # TODO: add run exports for msgpack-c
-    - msgpack-c
 
 test:
   commands:
