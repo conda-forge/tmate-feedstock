@@ -12,12 +12,13 @@ source:
     - 281-fix-msgpack-c.patch
 
 build:
-  number: 9
+  number: 10
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - autoconf
     - automake
     - libtool
