@@ -12,7 +12,7 @@ source:
     - 281-fix-msgpack-c.patch
 
 build:
-  number: 10
+  number: 11
   skip: true  # [win]
 
 requirements:
